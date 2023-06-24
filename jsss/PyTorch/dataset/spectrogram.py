@@ -6,7 +6,7 @@ from torch.utils.data.dataset import Dataset
 # currently there is no stub in torchaudio [issue](https://github.com/pytorch/audio/issues/615)
 from torchaudio import load as load_wav
 from torchaudio.transforms import Spectrogram, Resample # type: ignore
-from corpuspy.components.archive import hash_args, try_to_acquire_archive_contents, save_archive
+from speechcorpusy.components.archive import hash_args, try_to_acquire_archive_contents, save_archive
 
 from .waveform import get_dataset_wave_path, preprocess_as_wave
 from ...corpus import ItemIdJSSS, Subtype, JSSS

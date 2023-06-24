@@ -1,9 +1,9 @@
 from typing import Iterable, Optional, Union, NamedTuple, Dict, List
 from pathlib import Path
 
-from corpuspy.interface import AbstractCorpus
-from corpuspy.helper.forward import forward_from_GDrive
-from corpuspy.helper.contents import get_contents
+from speechcorpusy.interface import AbstractCorpus
+from speechcorpusy.helper.forward import forward_from_GDrive
+from speechcorpusy.helper.contents import get_contents
 
 
 # Shortform = Literal["short-form/basic5000", "short-form/onomatopee300", "short-form/voiceactress100"] # >=Python3.8
