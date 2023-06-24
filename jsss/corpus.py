@@ -44,7 +44,7 @@ class ItemIdJSSS(NamedTuple):
     serial_num: int
 
 
-class JSSS(AbstractCorpus[ItemIdJSSS]):
+class JSSS(AbstractCorpus):
     """JSSS corpus.
     
     Archive/contents handler of JSSS corpus.
