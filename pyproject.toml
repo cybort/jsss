@@ -11,7 +11,7 @@ repository = "https://github.com/cybort/jsss"
 [tool.poetry.dependencies]
 python = "^3.6.1"
 torch = "*"
-torchaudio = "^0.7.0"
+torchaudio = ">=0.7.0"
 pytorch-lightning = "^1.0.6"
 fsspec = {extras = ["s3"], version = "^0.8.4"}
 requests = "^2.25.1"
