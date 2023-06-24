@@ -2,7 +2,7 @@ from typing import Iterable, Optional, Union, NamedTuple, Dict, List
 from pathlib import Path
 
 from speechcorpusy.interface import AbstractCorpus
-from speechcorpusy.helper.forward import forward_from_GDrive
+from speechcorpusy.helper.forward import forward_from_gdrive
 from speechcorpusy.helper.contents import get_contents
 
 
@@ -85,7 +85,7 @@ class JSSS(AbstractCorpus[ItemIdJSSS]):
         """Forward original corpus archive to the adress.
         """
 
-        forward_from_GDrive(self.gdrive_contents_id, self._adress, 1.09)
+        forward_from_gdrive(self.gdrive_contents_id, self._adress, 1.09)
 
     def get_identities(self) -> List[ItemIdJSSS]:
         """Get corpus item identities.
