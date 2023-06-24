@@ -5,7 +5,7 @@ description = "jsss - Python loader of JSSS"
 authors = ["Tarepan"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/tarepan/jsss"
+repository = "https://github.com/cybort/jsss"
 
 
 [tool.poetry.dependencies]
@@ -16,7 +16,7 @@ pytorch-lightning = "^1.0.6"
 fsspec = {extras = ["s3"], version = "^0.8.4"}
 requests = "^2.25.1"
 tqdm = "^4.54.1"
-corpuspy = {git = "https://github.com/tarepan/corpuspy.git", rev = "main"}
+corpuspy = {git = "https://github.com/cybort/speechcorpusy.git", rev = "main"}
 
 [tool.poetry.dev-dependencies]
 
