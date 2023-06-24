@@ -54,7 +54,7 @@ class JSSS_wave(Dataset): # I failed to understand this error
     """
     def __init__(
         self,
-        resample_sr: Optional[int],
+        resample_sr: Optional[int] = 16000,
         subtypes: List[Subtype] = ["short-form/basic5000"],
         download_corpus: bool = False,
         corpus_adress: Optional[str] = None,
@@ -83,6 +83,8 @@ class JSSS_wave(Dataset): # I failed to understand this error
         self._transform = transform
 
         self._corpus = JSSS(corpus_adress, download_corpus)
+        #todo
+        #waveform, sample_rate = torchaudio.load("path_to_audio_file.wav")
         arg_hash = hash_args(subtypes, resample_sr)
         JSSS_wave_root = Path(".")/"tmp"/"JSSS_wave"
         self._path_contents_local = JSSS_wave_root/"contents"/arg_hash
