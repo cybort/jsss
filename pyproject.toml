@@ -13,7 +13,7 @@ python = "^3.6.1"
 torch = "*"
 torchaudio = ">=0.7.0"
 pytorch-lightning = "^1.0.6"
-fsspec = {extras = ["s3"], version = "^0.8.4"}
+fsspec = {extras = ["s3"], version = ">=0.8.4"}
 requests = "^2.25.1"
 tqdm = "^4.54.1"
 speechcorpusy = {git = "https://github.com/cybort/speechcorpusy.git", rev = "main"}
