@@ -13,7 +13,7 @@ We need portable & flexible loader for streamline development.
 Get corpus item *path* without thinking about corpus handling.  
 
 ```python
-# !pip install git+https://github.com/tarepan/jsss
+# !pip install git+https://github.com/cybort/jsss
 from jsss.corpus import JSSS
 
 # Get corpus archive and extract contents transparently.
